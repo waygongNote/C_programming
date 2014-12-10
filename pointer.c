@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
 	s2 = s1;
 	printf("s2 = %s\n", s2);
 
-	char s3[10]="";
-	s3 = s2;
-	printf("s3 = %s\n", s3);
+//	char s3[10]="";
+//	s3 = s2;
+//	printf("s3 = %s\n", s3);
 	return 0;
 }
