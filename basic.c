@@ -14,5 +14,11 @@ int main(int argc, char *argv[])
     s[0]='B';
     printf("%s\n", s);
     printf("%d\n", strlen(s));
+
+	int i=255;
+	char s1[10]="";
+	char *s2=s1;
+	s2 = (char *)&i;
+	printf("\n%s\n", s2);
     return 0;
 }
