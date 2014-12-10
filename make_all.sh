@@ -1,4 +1,4 @@
-for filename in $(find $pwd |grep "\.c")
+for filename in $(find $pwd | grep "\.c" | cut -d "." -f 1,2)
 do
-	gcc -c $filename
+	gcc `echo "$filename".c` -o `echo "$filename".o`
 done
