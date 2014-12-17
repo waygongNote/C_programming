@@ -1,25 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-
-void myDebug(int i)
-{
-    char ss[10]="OKOK_xxx\n";
-    ss[5]='0'+(i/100)%10;
-    ss[6]='0'+(i/10)%10;
-    ss[7]='0'+(i/1)%10;
-	printf("%s\n", ss);
-//    s->text = ss;
-//    s->sentlen = 9;
-//    uip_send(s->text, s->sentlen);
-}
-
 int main(int argc, char *argv[])
 {
-    printf("%c\n", 'B'-1);  // A
+#if 0
+	printf("%c\n", 'B'-1);  // A
     printf("%d\n", 'B'-1);  // 65
     printf("%c\n", 1+'A');  // B
-    printf("%d\n\n", 1+'A');// 66
-
+    printf("%d\n", 1+'A');// 66
+#endif
+#if 0
     printf("%d\n", sizeof(unsigned short)); // 2
     unsigned short us;
 
@@ -34,6 +23,19 @@ printf("+++++++++++++++++++++++++++++++++++\n");
 		myDebug(i);
 		myDebug(__LINE__);
 	}
-
+#endif
     return 0;
 }
+#if 0
+void myDebug(int i)
+{
+    char ss[10]="OKOK_xxx\n";
+    ss[5]='0'+(i/100)%10;
+    ss[6]='0'+(i/10)%10;
+    ss[7]='0'+(i/1)%10;
+	printf("%s\n", ss);
+//    s->text = ss;
+//    s->sentlen = 9;
+//    uip_send(s->text, s->sentlen);
+}
+#endif
